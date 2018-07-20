@@ -1,4 +1,4 @@
-FROM php:7.1-apache
+FROM php:7.1.19-apache
 
 RUN mkdir /usr/share/man/man1
 
@@ -67,4 +67,3 @@ RUN chown www-data:www-data -R /var/www/html/
 
 # PHP configuration
 COPY php.ini /usr/local/etc/php/
-
