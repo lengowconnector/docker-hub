@@ -15,6 +15,7 @@ RUN apt-get update \
     mariadb-client \
     wget \
     zip \
+    libzip-dev \
     unzip
 
 RUN docker-php-ext-configure \
@@ -66,4 +67,3 @@ RUN chown www-data:www-data -R /var/www/html/
 
 # PHP configuration
 COPY php.ini /usr/local/etc/php/
-
