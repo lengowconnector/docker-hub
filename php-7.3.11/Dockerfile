@@ -12,7 +12,7 @@ RUN apt-get update \
     libmcrypt-dev \
     libpng-dev \
     libxslt1-dev \
-    mariadb-client \
+    default-mysql-client \
     wget \
     zip \
     libzip-dev \
