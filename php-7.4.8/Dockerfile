@@ -16,6 +16,7 @@ RUN apt-get update \
     wget \
     zip \
     libzip-dev \
+    libonig-dev \
     unzip
 
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg
@@ -23,7 +24,6 @@ RUN docker-php-ext-configure gd --with-freetype --with-jpeg
 RUN docker-php-ext-install \
     gd \
     intl \
-    mbstring \
     mysqli \
     pdo_mysql \
     soap \
