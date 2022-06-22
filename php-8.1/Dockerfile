@@ -29,7 +29,8 @@ RUN docker-php-ext-install \
     soap \
     xsl \
     zip \
-    bcmath
+    bcmath \
+    sockets
 
 # Composer install
 RUN curl -sS https://getcomposer.org/installer | \
